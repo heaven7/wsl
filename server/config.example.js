@@ -1,1 +1,1 @@
-## app configuration file
+/* app configuration file */
