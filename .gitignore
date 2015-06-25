@@ -1,2 +1,3 @@
 server/config.js
+server/lib/kadira.js
 .idea/
