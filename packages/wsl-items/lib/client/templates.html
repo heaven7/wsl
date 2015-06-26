@@ -1,0 +1,12 @@
+<template name="itemsList">
+    <h3>Items</h3>
+    <ul>
+        {{#each items}}
+            <li>{{> item}}</li>
+        {{/each}}
+    </ul>
+</template>
+
+<template name="item">
+    <b>{{name}}</b><span>{{description}}</span>
+</template>
