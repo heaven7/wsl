@@ -1,12 +1,24 @@
 <template name="itemsList">
-    <h3>Items</h3>
+    <h3>Items-List</h3>
     <ul>
-        {{#each items}}
-            <li>{{> item}}</li>
-        {{/each}}
+        {{#if items}}
+            {{#each items}}
+                <li>{{> item}}</li>
+            {{/each}}
+        {{/if}}
     </ul>
+    {{> createItem}}
 </template>
 
 <template name="item">
     <b>{{name}}</b><span>{{description}}</span>
+</template>
+
+<template name="createItem">
+    {{#autoForm collection="Items" type="create"}}
+        {{> afQuickField name='title'}}
+        {{> afQuickField name='description'}}
+        {{> afQuickField name='need'}}
+        {{> afQuickField name='category'}}
+    {{/autoForm}}
 </template>

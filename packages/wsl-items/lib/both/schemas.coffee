@@ -34,3 +34,5 @@ Schemas.Items = new SimpleSchema
   category:
     type: String
     regEx: SimpleSchema.RegEx.Id
+
+@Items.attachSchema(Schemas.Items)

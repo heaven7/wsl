@@ -1,1 +1,1 @@
-Items = new Meteor.Collection 'items'
+@Items = new Meteor.Collection 'items'

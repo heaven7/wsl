@@ -1,3 +1,7 @@
 Template.itemsList.helpers
   items: ->
-    Items.find()
+    tItems = Items.find()
+    if(tItems.count() == 0)
+      false
+    else
+      tItems
