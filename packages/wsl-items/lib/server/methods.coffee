@@ -1,10 +1,11 @@
 Meteor.methods
   newItem: (doc)->
-    # check(doc, Schemas.Items)
+    check(doc, Schemas.Items)
     @unblock()
-    console.log('newItem: ' + doc)
-    Items.insert(doc, (error)->
-      if(error)
+    Items.insert doc, (error)->
+      if error
         console.log "Method error: " + error
-      console.log('Item inserted ' + Items.find().count())
-    )
+  updateItem: (doc)->
+    Items.update({_id: doc._id}, {$set: doc })
+  deleteItem: (doc)->
+    Items.remove({_id: doc._id})

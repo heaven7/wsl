@@ -11,7 +11,17 @@
 </template>
 
 <template name="item">
-    <b>{{name}}</b><span>{{description}}</span>
+    {{# if selectedEditItem}}
+        {{> editItem}}
+    {{else}}
+        <h4>{{title}}</h4>
+        <p>{{description}}<span><small> - {{createdAt}}</small></span></p>
+        {{# if need}}
+            <p>need</p>
+        {{/ if}}
+        <button class="editItem">Edit</button>
+        <small><button class="deleteItem">Delete</button></small>
+    {{/ if}}
 </template>
 
 <template name="insertItemForm">
@@ -21,5 +31,16 @@
         {{> afQuickField name='need'}}
 
         <button id="submitItemForm" type="submit" class="btn btn-primary">Insert</button>
+    {{/autoForm}}
+</template>
+
+<template name="editItem">
+    {{#autoForm collection="Items" doc=doc meteormethod="editItem" type="method" id="editItemForm"}}
+        {{> afQuickField name='title'}}
+        {{> afQuickField name='description'}}
+        {{> afQuickField name='need'}}
+
+        <button id="submitUpdate" type="submit">Update</button>
+        <button id="cancelUpdate" type="submit">Cancel</button>
     {{/autoForm}}
 </template>
