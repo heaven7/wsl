@@ -22,8 +22,8 @@ Package.on_use(function (api) {
             'aldeed:collection2',
             'aldeed:autoform',
             'meteor',
-            'coffeescript',
             'livedata',
+            'coffeescript',
             'templating',
             'iron:router'
         ],
@@ -39,8 +39,8 @@ Package.on_use(function (api) {
 
     api.addFiles(
         [
-            'lib/client/helpers.coffee',
             'lib/client/templates.html',
+            'lib/client/helpers.coffee',
             'lib/client/templates.coffee'
         ],
         'client')

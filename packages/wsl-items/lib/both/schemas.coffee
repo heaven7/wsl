@@ -3,13 +3,16 @@ Schemas.Items = new SimpleSchema
   doc:
     type: String
     regEx: SimpleSchema.RegEx.Id
+    optional: true
 
   docType:
     type: String
+    optional: true
 
   owner:
     type: String
     regEx: SimpleSchema.RegEx.Id
+    optional: true
     autoform:
       options: ->
         _.map Meteor.users.find().fetch(), (user)->
@@ -18,8 +21,18 @@ Schemas.Items = new SimpleSchema
 
   createdAt:
     type: Date
+    optional: true
     autoValue: ->
       if this.isInsert
+        new Date()
+
+  modified:
+    type: Date
+    optional: true
+    autoValue: ->
+      if this.isInsert
+        this.unset()
+      else
         new Date()
 
   title:
@@ -30,9 +43,11 @@ Schemas.Items = new SimpleSchema
 
   need:
     type: Boolean
+    optional: true
 
   category:
     type: String
+    optional: true
     regEx: SimpleSchema.RegEx.Id
 
 @Items.attachSchema(Schemas.Items)

@@ -7,18 +7,19 @@
             {{/each}}
         {{/if}}
     </ul>
-    {{> createItem}}
+    {{> insertItemForm}}
 </template>
 
 <template name="item">
     <b>{{name}}</b><span>{{description}}</span>
 </template>
 
-<template name="createItem">
-    {{#autoForm collection="Items" type="create"}}
+<template name="insertItemForm">
+    {{#autoForm collection="Items" meteormethod="newItem" type="method" id="insertItemForm"}}
         {{> afQuickField name='title'}}
         {{> afQuickField name='description'}}
         {{> afQuickField name='need'}}
-        {{> afQuickField name='category'}}
+
+        <button id="submitItemForm" type="submit" class="btn btn-primary">Insert</button>
     {{/autoForm}}
 </template>
