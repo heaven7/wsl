@@ -6,6 +6,11 @@ Meteor.methods
       if error
         console.log "Method error: " + error
   updateItem: (doc)->
-    Items.update({_id: doc._id}, {$set: doc })
+    check(doc, Schemas.Items)
+    @unblock()
+    console.log(JSON.stringify(doc))
+    res = Items.update({_id: doc._id}, {doc})
+    console.log('update: ' + res)
   deleteItem: (doc)->
+    @unblock()
     Items.remove({_id: doc._id})

@@ -6,13 +6,9 @@ Template.itemsList.helpers
     else
       tItems
 
-Template.item.helpers
-  selectedEditItem: ->
-    Session.get('selectedEditItem') == this._id
-
 Template.itemsList.events
   'click .editItem': (e, t)->
-    Session.set('selectedEditItem', this._id)
+    Session.set('selectedItem', this._id)
   'click .deleteItem': (e, t)->
     Meteor.call('deleteItem', this, (error, result)->
       if(error)
@@ -20,10 +16,14 @@ Template.itemsList.events
       true
     )
 
-Template.editItem.events
-  'click #cancelUpdate': (e, t)->
-    Session.set('selectedEditItem', '')
-
-Template.editItem.helpers
+Template.editItemForm.helpers
   doc: ->
     this
+
+Template.editItemForm.events
+  'click #cancelUpdate': (e, t)->
+    Session.set('selectedItem', '')
+
+Template.item.helpers
+  selectedItem: ->
+    Session.get('selectedItem') == this._id

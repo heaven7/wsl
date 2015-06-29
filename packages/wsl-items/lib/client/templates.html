@@ -11,8 +11,8 @@
 </template>
 
 <template name="item">
-    {{# if selectedEditItem}}
-        {{> editItem}}
+    {{# if selectedItem}}
+        {{> editItemForm}}
     {{else}}
         <h4>{{title}}</h4>
         <p>{{description}}<span><small> - {{createdAt}}</small></span></p>
@@ -34,8 +34,8 @@
     {{/autoForm}}
 </template>
 
-<template name="editItem">
-    {{#autoForm collection="Items" doc=doc meteormethod="editItem" type="method" id="editItemForm"}}
+<template name="editItemForm">
+    {{#autoForm collection="Items" doc=doc meteormethod="updateItem" type="method" id="editItemForm"}}
         {{> afQuickField name='title'}}
         {{> afQuickField name='description'}}
         {{> afQuickField name='need'}}
