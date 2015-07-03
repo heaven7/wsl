@@ -5,12 +5,14 @@ Meteor.methods
     Items.insert doc, (error)->
       if error
         console.log "Method error: " + error
+
   updateItem: (doc)->
     check(doc, Schemas.Items)
     @unblock()
-    console.log(JSON.stringify(doc))
-    res = Items.update({_id: doc._id}, {doc})
-    console.log('update: ' + res)
+    if(Items.update({id: this._id}, {$set: doc}))
+      console.log('update successful')
+      true
+
   deleteItem: (doc)->
     @unblock()
     Items.remove({_id: doc._id})

@@ -23,6 +23,8 @@ Template.editItemForm.helpers
 Template.editItemForm.events
   'click #cancelUpdate': (e, t)->
     Session.set('selectedItem', '')
+  'doc': ->
+    this
 
 Template.item.helpers
   selectedItem: ->

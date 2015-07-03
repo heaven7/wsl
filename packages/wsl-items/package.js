@@ -18,6 +18,7 @@ Package.on_use(function (api) {
 
     api.use(
         [
+            'accounts-password',
             'aldeed:simple-schema',
             'aldeed:collection2',
             'aldeed:autoform',
