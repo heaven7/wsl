@@ -1,3 +1,7 @@
-Router.route('/', function () {
-    this.render('home');
-});
+Router.map(function() {
+    this.route('signup');
+
+    this.route('home', {
+        path: '/'
+    });
+})
