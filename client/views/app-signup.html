@@ -1,15 +1,13 @@
 <template name="signup">
     <div class="panel-body">
-        test 123
-        {{#autoForm collection=users id="signup" method="createuser" type="insert"}}
+        <form id="signup" method="POST">
             <fieldset>
-                {{> afQuickField name="username"}}
-                {{> afQuickField name="emails"}}
-                {{> afQuickField name="profile.gender"}}
-                {{> afQuickField name="profile.birthday"}}
-
+                <label>Username</label><input type="text" name="username">
+                <label>Email</label><input type="text" name="email">
+                <label>Password</label><input type="password" name="password">
+                <label>Confirm password</label><input type="password" name="password_confirmation">
             </fieldset>
             <button type="submit" class="btn btn-primary">Insert</button>
-        {{/autoForm}}
+        </form>
     </div>
 </template>
