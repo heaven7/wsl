@@ -7,7 +7,7 @@ Template.signup.helpers({
     }
 });
 Template.signup.events({
-    'submit form': function (event, template) {
+    'submit form#signup': function (event, template) {
         event.preventDefault();
         user = new Object
         user.username = template.$('[name=username]').val();
@@ -16,6 +16,8 @@ Template.signup.events({
         Meteor.call('createWSLUser', user, function (error) {
             if(error)
                 console.log('Error: ' + error.message)
+
+            Router.go('home');
         })
     }
 })
