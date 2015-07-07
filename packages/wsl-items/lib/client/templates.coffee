@@ -16,6 +16,12 @@ Template.itemsList.events
       true
     )
 
+Template.insertItemForm.helpers
+  id: ->
+    Meteor.userId()
+  docType: ->
+    'User'
+
 Template.editItemForm.helpers
   doc: ->
     this

@@ -3,11 +3,11 @@ Schemas.Items = new SimpleSchema
   doc:
     type: String
     regEx: SimpleSchema.RegEx.Id
-    optional: true
+#    optional: true
 
   docType:
     type: String
-    optional: true
+#    optional: true
 
   owner:
     type: String
