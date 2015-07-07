@@ -10,8 +10,8 @@ iron:router
 aldeed:collection2
 aldeed:autoform
 aldeed:simple-schema
-meteorhacks:kadira
-meteorhacks:kadira-profiler
+# meteorhacks:kadira
+# meteorhacks:kadira-profiler
 
 accounts-ui
 accounts-base

@@ -1,10 +1,9 @@
-Router.route('/', {
-    subscription: function() {
-        return Meteor.subscribe('items')
-    },
-    action: function() {
-        this.render('home');
-    }
+Router.map(function() {
+    this.route('signup');
+    this.route('login');
 
-});
 
+    this.route('home', {
+        path: '/'
+    });
+})
