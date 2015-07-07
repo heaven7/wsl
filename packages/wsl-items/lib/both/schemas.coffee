@@ -9,15 +9,14 @@ Schemas.Items = new SimpleSchema
     type: String
 #    optional: true
 
-  owner:
+  owners:
+    type: [Object],
+    optional: true
+
+  "owners.$.user":
     type: String
     regEx: SimpleSchema.RegEx.Id
     optional: true
-    autoform:
-      options: ->
-        _.map Meteor.users.find().fetch(), (user)->
-          label: user.emails[0].address
-          value: user._id
 
   createdAt:
     type: Date

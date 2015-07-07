@@ -21,10 +21,18 @@ Template.insertItemForm.helpers
     Meteor.userId()
   docType: ->
     'User'
+  currentUser: ->
+    Meteor.users.find({_id: Meteor.userId()})
 
 Template.editItemForm.helpers
   doc: ->
     this
+  id: ->
+    Meteor.userId()
+  docType: ->
+    'User'
+  itemUsers:
+    Meteor.users.find().fetch()
 
 Template.editItemForm.events
   'click #cancelUpdate': (e, t)->

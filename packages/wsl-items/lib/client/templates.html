@@ -26,8 +26,9 @@
 
 <template name="insertItemForm">
     {{#autoForm collection="Items" meteormethod="newItem" type="method" id="insertItemForm"}}
-        {{> afQuickField name='doc' value=id type='hidden' label=''}}
+        {{> afQuickField name='doc' value=id type='hidden' }}
         {{> afQuickField name='docType' value=docType type='hidden' label=''}}
+        {{> afQuickField name='owners'}}
         {{> afQuickField name='title'}}
         {{> afQuickField name='description'}}
         {{> afQuickField name='need'}}
@@ -38,6 +39,9 @@
 
 <template name="editItemForm">
     {{#autoForm collection="Items" doc=doc meteormethod="updateItem" type="method" id="editItemForm"}}
+        {{> afQuickField name='doc' value=id label=''}}
+        {{> afQuickField name='docType' value=docType label=''}}
+        {{> afQuickField name='owners'}}
         {{> afQuickField name='title'}}
         {{> afQuickField name='description'}}
         {{> afQuickField name='need'}}
