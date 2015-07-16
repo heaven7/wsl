@@ -12,10 +12,10 @@ Package.on_use(function (api) {
 
     api.use(['minimongo', 'mongo-livedata', 'templating'], 'client')
 
-    api.addFiles(['errors.coffee', 'templates.coffee', 'templates.html'], 'client')
+    api.addFiles(['wsl-errors.coffee', 'templates.coffee', 'templates.html'], 'client')
 
     if (api.export)
-      api.export('Errors')
+      api.export('Errors', ['Client'])
 
 
 })
