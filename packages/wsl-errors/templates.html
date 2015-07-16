@@ -1,0 +1,16 @@
+<template name="errors">
+    <ul id="error-list">
+        {{#if errors}}
+            {{#each error}}
+                <li>{{> error}}</li>
+            {{/each}}
+        {{/if}}
+    </ul>
+</template>
+
+<template name="error">
+   <div class="alert alert-error">
+       <button type="button" class="close" data-dismiss="alert">&times;</button>
+       {{message}}
+   </div>
+</template>
