@@ -1,5 +1,6 @@
-Template.errors.helpers errors: ->
-  Errors.collection.find()
+Template.errors.helpers
+  errors: ->
+    Errors.collection.find()
 
 Template.error.rendered = ->
   error = @data
