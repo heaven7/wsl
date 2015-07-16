@@ -1,0 +1,2 @@
+SimpleSchema.debug = true
+

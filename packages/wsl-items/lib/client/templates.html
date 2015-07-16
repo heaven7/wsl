@@ -1,0 +1,52 @@
+<template name="itemsList">
+    <h3>Items-List</h3>
+    <ul>
+        {{#if items}}
+            {{#each items}}
+                <li>{{> item}}</li>
+            {{/each}}
+        {{/if}}
+    </ul>
+    {{> insertItemForm}}
+</template>
+
+<template name="item">
+    {{# if selectedItem}}
+        {{> editItemForm}}
+    {{else}}
+        <h4>{{title}}</h4>
+        <p>{{description}}<span><small> - {{createdAt}}</small></span></p>
+        {{# if need}}
+            <p>need</p>
+        {{/ if}}
+        <button class="editItem">Edit</button>
+        <small><button class="deleteItem">Delete</button></small>
+    {{/ if}}
+</template>
+
+<template name="insertItemForm">
+    {{#autoForm collection="Items" meteormethod="newItem" type="method" id="insertItemForm"}}
+        {{> afQuickField name='doc' value=id type='hidden' }}
+        {{> afQuickField name='docType' value=docType type='hidden' label=''}}
+        {{> afQuickField name='owners'}}
+        {{> afQuickField name='title'}}
+        {{> afQuickField name='description'}}
+        {{> afQuickField name='need'}}
+
+        <button id="submitItemForm" type="submit" class="btn btn-primary">Insert</button>
+    {{/autoForm}}
+</template>
+
+<template name="editItemForm">
+    {{#autoForm collection="Items" doc=doc meteormethod="updateItem" type="method" id="editItemForm"}}
+        {{> afQuickField name='doc' value=id label=''}}
+        {{> afQuickField name='docType' value=docType label=''}}
+        {{> afQuickField name='owners'}}
+        {{> afQuickField name='title'}}
+        {{> afQuickField name='description'}}
+        {{> afQuickField name='need'}}
+
+        <button id="submitUpdate" type="submit">Update</button>
+        <button id="cancelUpdate" type="submit">Cancel</button>
+    {{/autoForm}}
+</template>
