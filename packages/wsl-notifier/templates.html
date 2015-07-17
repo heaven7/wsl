@@ -1,0 +1,28 @@
+<template name="notifications">
+    <ul id="notifications-list">
+        {{#each notifications}}
+            <li>{{> notification}}</li>
+        {{/each}}
+    </ul>
+</template>
+
+<template name="notification">
+    {{#if isError}}
+        <div class="notification notification-error">
+           <button type="button" class="close" data-dismiss="alert">&times;</button>
+           {{message}}
+        </div>
+    {{/if}}
+    {{#if isSuccess}}
+        <div class="notification notification-success">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            {{message}}
+        </div>
+    {{/if}}
+    {{#if isWarning}}
+        <div class="notification notification-warningr">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            {{message}}
+        </div>
+    {{/if}}
+</template>

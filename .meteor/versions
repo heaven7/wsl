@@ -27,7 +27,7 @@ fastclick@1.0.3
 geojson-utils@1.0.3
 google@1.1.5
 heaven7:wsl-items@0.0.1
-heaven7:wsl-errors@0.0.1
+heaven7:wsl-notifier@0.0.1
 html-tools@1.0.4
 htmljs@1.0.4
 http@1.1.0
