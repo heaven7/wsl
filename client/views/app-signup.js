@@ -15,7 +15,7 @@ Template.signup.events({
         user.password = template.$('[name=password]').val();
         Meteor.call('createWSLUser', user, function (error) {
             if(error)
-                console.log('Error: ' + error.message)
+                Notifications.throw(error.message, 'error')
 
             Router.go('home');
         })
