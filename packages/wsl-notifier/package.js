@@ -1,6 +1,6 @@
 Package.describe({
-    name: 'heaven7:wsl-errors',
-    summary: "WSL Errors-Package",
+    name: 'heaven7:wsl-notifier',
+    summary: "WSL Notifier-Package",
     version: "0.0.1",
     git: ""
 });
@@ -15,7 +15,7 @@ Package.on_use(function (api) {
     api.use(['minimongo', 'mongo-livedata', 'templating'], 'client')
 
     api.addFiles([
-        'wsl-errors.coffee',
+        'wsl-notifier.coffee',
         'templates.html',
         'templates.coffee'
         ], 'client')
