@@ -1,0 +1,3 @@
+[submodule "wsl-items"]
+	path = packages/wsl-items
+	url = https://github.com/heaven7/wsl-items.git
