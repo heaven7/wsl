@@ -15,8 +15,8 @@ Package.on_use(function (api) {
     api.use(['minimongo', 'mongo-livedata', 'templating'], 'client')
 
     api.addFiles([
-        'wsl-notifier.coffee',
         'templates.html',
+        'wsl-notifier.coffee',
         'templates.coffee'
         ], 'client')
 
