@@ -7,10 +7,10 @@ Template.login.events({
 
         Meteor.loginWithPassword(email, password, function(error) {
             if (error) {
-                Notifications.throw(error.message, 'error');
+                sAlert.error(error.message);
                 return false;
             }
-            Notifications.throw('Successfully logged in', 'success');
+            sAlert.success('Successfully logged in');
             Router.go('home');
         });
     }

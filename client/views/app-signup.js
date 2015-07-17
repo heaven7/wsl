@@ -13,6 +13,11 @@ Template.signup.events({
         user.username = template.$('[name=username]').val();
         user.email = template.$('[name=email]').val();
         user.password = template.$('[name=password]').val();
+
+        if(!user.username)
+            sAlert.error('Please provide a username.')
+            return
+        
         Meteor.call('createWSLUser', user, function (error) {
             if(error)
                 Notifications.throw(error.message, 'error')
