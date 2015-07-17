@@ -5,6 +5,6 @@ Template.notifications.helpers
 Template.notification.rendered = ->
   notification = @data
   Meteor.defer ->
-    Notifications.collection.update error._id, $set: seen: true
+    Notifications.collection.update notification._id, $set: seen: true
     return
   return
