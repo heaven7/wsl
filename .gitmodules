@@ -1,3 +1,6 @@
 [submodule "packages/wsl-items"]
 	path = packages/wsl-items
 	url = https://github.com/heaven7/wsl-items.git
+[submodule "packages/wsl-alert"]
+	path = packages/wsl-alert
+	url = https://github.com/heaven7/wsl-alert.git

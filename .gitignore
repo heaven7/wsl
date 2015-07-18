@@ -1,4 +1,5 @@
 server/config.js
 server/lib/kadira.js
 npm-debug.log
+packages/
 .idea/
