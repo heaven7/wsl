@@ -4,6 +4,8 @@ accounts-google@1.0.4
 accounts-oauth@1.1.5
 accounts-password@1.1.1
 accounts-twitter@1.0.4
+accounts-ui@1.1.5
+accounts-ui-unstyled@1.1.7
 aldeed:autoform@4.2.2
 aldeed:collection2@2.3.3
 aldeed:simple-schema@1.3.3
@@ -76,13 +78,14 @@ spacebars@1.0.6
 spacebars-compiler@1.0.6
 spiderable@1.0.7
 srp@1.0.3
+standard-app-packages@1.0.5
 templating@1.1.1
 tracker@1.0.7
 twitter@1.1.4
 ui@1.0.6
 underscore@1.0.3
 url@1.0.4
-useraccounts:core@1.0.1
-useraccounts:unstyled@1.0.1
+useraccounts:core@1.8.1
+useraccounts:unstyled@1.8.1
 webapp@1.2.0
 webapp-hashing@1.0.3
