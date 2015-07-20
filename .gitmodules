@@ -1,6 +1,12 @@
+[submodule "packages/wsl-core"]
+	path = packages/wsl-core
+	url = https://github.com/heaven7/wsl-core.git
 [submodule "packages/wsl-items"]
 	path = packages/wsl-items
 	url = https://github.com/heaven7/wsl-items.git
 [submodule "packages/wsl-alert"]
 	path = packages/wsl-alert
 	url = https://github.com/heaven7/wsl-alert.git
+[submodule "packages/wsl-useraccounts"]
+	path = packages/wsl-useraccounts
+	url = https://github.com/heaven7/wsl-useraccounts.git
