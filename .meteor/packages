@@ -1,33 +1,6 @@
-# Meteor packages used by this project, one per line.
-# Check this file (and the other files in this directory) into your repository.
-#
-# 'meteor add' and 'meteor remove' will edit this file for you,
-# but you can also edit it by hand.
-
 meteor-platform
 
-iron:router
-aldeed:collection2
-aldeed:autoform
-aldeed:simple-schema
-# meteorhacks:kadira
-# meteorhacks:kadira-profiler
-
-accounts-ui
-accounts-base
-accounts-password
-accounts-facebook
-accounts-google
-accounts-twitter
-mrt:moment
-
-spiderable
-#manuelschoebel:ms-seo
-multiply:iron-router-progress
-
-# testing
-# xolvio:cucumber
-
-# own
+# wsl packages
+heaven7:wsl-core
 heaven7:wsl-items
 heaven7:wsl-alert
