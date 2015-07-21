@@ -10,3 +10,6 @@
 [submodule "packages/wsl-core"]
 	path = packages/wsl-core
 	url = https://github.com/heaven7/wsl-core.git
+[submodule "packages/wsl-theme-base"]
+	path = packages/wsl-theme-base
+	url = https://github.com/heaven7/wsl-theme-base.git
