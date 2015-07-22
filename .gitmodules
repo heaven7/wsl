@@ -18,3 +18,6 @@
 	path = packages/wsl-theme-base
 	url = https://github.com/heaven7/wsl-theme-base.git
 	ignore = all
+[submodule "packages/wsl-settings"]
+	path = packages/wsl-settings
+	url = https://github.com/heaven7/wsl-settings.git
