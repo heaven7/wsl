@@ -21,3 +21,4 @@
 [submodule "packages/wsl-settings"]
 	path = packages/wsl-settings
 	url = https://github.com/heaven7/wsl-settings.git
+    ignore = all
