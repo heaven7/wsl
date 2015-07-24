@@ -26,6 +26,7 @@ fastclick@1.0.3
 geojson-utils@1.0.3
 heaven7:wsl-alert@0.0.1
 heaven7:wsl-core@0.0.1
+heaven7:wsl-i18n@0.0.1
 heaven7:wsl-items@0.0.1
 heaven7:wsl-settings@0.0.1
 heaven7:wsl-theme-base@0.0.1
