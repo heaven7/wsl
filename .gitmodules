@@ -22,3 +22,6 @@
 	path = packages/wsl-settings
 	url = https://github.com/heaven7/wsl-settings.git
     ignore = all
+[submodule "packages/wsl-i18n"]
+	path = packages/wsl-i18n
+	url = https://github.com/heaven7/wsl-i18n.git
