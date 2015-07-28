@@ -25,3 +25,6 @@
 [submodule "packages/wsl-i18n"]
 	path = packages/wsl-i18n
 	url = https://github.com/heaven7/wsl-i18n.git
+[submodule "pacakges/wsl-translations"]
+	path = pacakges/wsl-translations
+	url = https://github.com/heaven7/wsl-translations.git
