@@ -28,3 +28,6 @@
 [submodule "packages/wsl-translations"]
 	path = packages/wsl-translations
 	url = https://github.com/heaven7/wsl-translations.git
+[submodule "packages/wsl-fulfiller"]
+	path = packages/wsl-fulfiller
+	url = https://github.com/heaven7/wsl-fulfiller.git
