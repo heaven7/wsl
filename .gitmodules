@@ -25,9 +25,15 @@
 [submodule "packages/wsl-i18n"]
 	path = packages/wsl-i18n
 	url = https://github.com/heaven7/wsl-i18n.git
+	ignore = all
 [submodule "packages/wsl-translations"]
 	path = packages/wsl-translations
 	url = https://github.com/heaven7/wsl-translations.git
+	ignore = all
 [submodule "packages/wsl-fulfiller"]
 	path = packages/wsl-fulfiller
 	url = https://github.com/heaven7/wsl-fulfiller.git
+	ignore = all
+[submodule "packages/wsl-locations"]
+	path = packages/wsl-locations
+	url = https://github.com/heaven7/wsl-locations.git
