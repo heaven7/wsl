@@ -1,10 +1,11 @@
 # weshare.love packages
 heaven7:wsl-core
+heaven7:wsl-settings
 heaven7:wsl-i18n
 heaven7:wsl-translations
-heaven7:wsl-settings
 heaven7:wsl-items
 heaven7:wsl-theme-base
 heaven7:wsl-useraccounts
 heaven7:wsl-alert
 heaven7:wsl-fulfiller
+heaven7:wsl-locations
