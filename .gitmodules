@@ -40,3 +40,6 @@
 [submodule "packages/wsl-tasks"]
 	path = packages/wsl-tasks
 	url = https://github.com/heaven7/wsl-tasks.git
+[submodule "packages/wsl-connector"]
+	path = packages/wsl-connector
+	url = https://github.com/heaven7/wsl-connector.git
