@@ -1,3 +1,4 @@
 packages/
 publish_packages.sh
 .idea/
+settings.json
