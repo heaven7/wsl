@@ -43,3 +43,6 @@
 [submodule "packages/wsl-connector"]
 	path = packages/wsl-connector
 	url = https://github.com/heaven7/wsl-connector.git
+[submodule "packages/wsl-projects"]
+	path = packages/wsl-projects
+	url = https://github.com/heaven7/wsl-projects.git

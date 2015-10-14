@@ -1,5 +1,5 @@
-packages/
+packages/*
 publish_packages.sh
-.idea/
+.idea/*
 settings.json
 start_es.sh
