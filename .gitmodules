@@ -46,3 +46,6 @@
 [submodule "packages/wsl-projects"]
 	path = packages/wsl-projects
 	url = https://github.com/heaven7/wsl-projects.git
+[submodule "packages/wsl-memberships"]
+	path = packages/wsl-memberships
+	url = https://github.com/heaven7/wsl-memberships.git
