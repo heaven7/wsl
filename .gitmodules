@@ -49,3 +49,6 @@
 [submodule "packages/wsl-memberships"]
 	path = packages/wsl-memberships
 	url = https://github.com/heaven7/wsl-memberships.git
+[submodule "packages/wsl-theme-semantic-ui"]
+	path = packages/wsl-theme-semantic-ui
+	url = https://github.com/heaven7/wsl-theme-semantic-ui.git
