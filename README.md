@@ -14,7 +14,10 @@ Fetch and init submodules on checkout
 git clone https://github.com/heaven7/wsl.git
 cd wsl/
 git submodule update --init --recursive
-git fetch --recurse-submodules
+```
+Get latest data from submodules
+```
+git submodule foreach git pull --ff-only origin master
 ```
 ### Configuration
 Change the settings.example.json corresponding your needs and rename it to
