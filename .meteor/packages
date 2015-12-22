@@ -1,5 +1,6 @@
 # weshare.love packages
 heaven7:wsl-core
+heaven7:wsl-permissions
 heaven7:wsl-settings
 heaven7:wsl-i18n
 heaven7:wsl-translations

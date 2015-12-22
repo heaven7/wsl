@@ -70,6 +70,7 @@ fastclick@1.0.7
 flemay:less-autoprefixer@1.2.0
 fortawesome:fontawesome@4.5.0
 geojson-utils@1.0.4
+gwendall:autoform-i18n@0.1.9_1
 handlebars@1.0.4
 heaven7:wsl-alert@0.0.2
 heaven7:wsl-connector@0.0.2
@@ -80,6 +81,7 @@ heaven7:wsl-i18n@0.0.2
 heaven7:wsl-items@0.0.2
 heaven7:wsl-locations@0.0.2
 heaven7:wsl-memberships@0.0.1
+heaven7:wsl-permissions@0.0.1
 heaven7:wsl-projects@0.0.2
 heaven7:wsl-settings@0.0.2
 heaven7:wsl-tasks@0.0.2
@@ -104,7 +106,6 @@ jparker:crypto-md5@0.1.1
 jparker:gravatar@0.3.1
 jquery@1.11.4
 juliancwirko:s-alert@3.1.2
-kadira:blaze-layout@2.0.1
 lai:collection-extensions@0.1.4
 launch-screen@1.0.4
 less@2.5.1
@@ -136,7 +137,6 @@ mrt:moment@2.8.1
 msavin:mongol@1.6.2
 multiply:iron-router-progress@1.0.2
 npm-bcrypt@0.7.8_2
-npm-container@1.2.0
 npm-mongo@1.4.39_1
 oauth@1.1.6
 oauth1@1.1.5

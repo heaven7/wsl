@@ -55,3 +55,6 @@
 [submodule "packages/wsl-files"]
 	path = packages/wsl-files
 	url = https://github.com/heaven7/wsl-files.git
+[submodule "packages/wsl-permissions"]
+	path = packages/wsl-permissions
+	url = https://github.com/heaven7/wsl-permissions.git
