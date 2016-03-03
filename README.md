@@ -30,9 +30,14 @@ git clone https://github.com/heaven7/wsl.git && cd wsl/
 ## Configuration
 Change the `settings.example.json` corresponding your needs and rename it to `settings.json`.
 
-Start the app with
+## Start
+Start the app in Linux/MacOs with
 ```bash
 source start.sh
+```
+on Windows with
+```bash
+meteor --settings settings.json
 ```
 and point your browser to
 ```bash
