@@ -1,32 +1,36 @@
-We Share Love
+# We Share Love
 ===
+a sharing portal for a self-sustaining living.
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/heaven7/wsl?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+This app is built with [meteor] (https://www.meteor.com).
+## Requirements
+These tools need to be installed before launching wsl.
 
-![alt tag](https://codeship.com/projects/c78c06e0-6f59-0132-e1d9-5a2456e5a93f/status?branch=master)
+### meteor
+Follow these (instructions) [https://www.meteor.com/install] to install meteor.
 
-We Share Love - a sharing portal for a self-sustaining living.
-
-### Installation
-Clone this repo.
-Fetch and init submodules on checkout
+### graphicsmagick
+**Mac OS X** `brew install graphicsmagick` or `brew install imagemagick`
+**Linux** download rpm or use packagemanager
 ```bash
-git clone https://github.com/heaven7/wsl.git
-cd wsl/
-git submodule update --init --recursive
+sudo add-apt-repository ppa:dhor/myway
+sudo apt-get update
+sudo apt-get install graphicsmagick
 ```
-Get latest data from submodules
-```
-git submodule foreach git pull --ff-only origin master
-```
-### Configuration
-Change the settings.example.json corresponding your needs and rename it to
-```bash
-settings.json
-```
-wsl is built with elasticsearch, so you need to run it before. Look [here] (https://www.elastic.co/guide/en/elasticsearch/guide/current/_installing_elasticsearch.html)  how to.
+**Centos** `yum install GraphicsMagick`
+**Windows** [download] (https://sourceforge.net/projects/graphicsmagick/files/graphicsmagick/) the installer and run
 
-Start with
+### elasticsearch
+wsl is (going to) built with elasticsearch, so you need to run it before. Look [here] (https://www.elastic.co/guide/en/elasticsearch/guide/current/_installing_elasticsearch.html)  how to.
+
+## Installation
+Clone this repo with
+```bash
+git clone https://github.com/heaven7/wsl.git && cd wsl/
+```
+## Configuration
+Change the settings.example.json corresponding your needs and rename it to `settings.json`.
+Start the app with
 ```bash
 source start.sh
 ```
@@ -34,3 +38,21 @@ and point your browser to
 ```bash
 localhost:3000
 ```
+Enjoy :)
+
+## Contributing
+Contributors are very welcome. There are many things you can help with,
+including finding and fixing bugs, creating examples for the examples folder,
+contributing to improved design or adding features. Some guidelines below:
+
+* **Questions**: Please post to Stack Overflow and tag with `wsl` : http://stackoverflow.com/questions/tagged/wsl.
+
+* **New Features**: If you'd like to work on a feature,
+  start by creating a 'Feature Design: Title' issue. This will let people bat it
+  around a bit before you send a full blown pull request. Also, you can create
+  an issue to discuss a design even if you won't be working on it.
+
+* **Bugs**: If you think you found a bug, please create a "reproduction." This is a small project that demonstrates the problem as concisely as possible. The project should be cloneable from Github. Any bug reports without a reproduction that don't have an obvious solution will be marked as "awaiting-reproduction" and closed after one week. Want more information on creating reproductions? Watch this video: https://www.eventedmind.com/feed/github-issues-and-reproductions.
+
+## License
+MIT
