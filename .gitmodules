@@ -61,3 +61,6 @@
 [submodule "packages/wsl-wysiwyg"]
 	path = packages/wsl-wysiwyg
 	url = https://github.com/heaven7/wsl-wysiwyg.git
+[submodule "packages/wsl-email"]
+	path = packages/wsl-email
+	url = https://github.com/heaven7/wsl-email.git
