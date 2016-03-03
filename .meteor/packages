@@ -11,7 +11,7 @@ heaven7:wsl-locations
 heaven7:wsl-projects
 heaven7:wsl-memberships
 heaven7:wsl-tasks
-heaven7:wsl-connector
+#heaven7:wsl-connector
 heaven7:wsl-settings
 heaven7:wsl-theme-base
 heaven7:wsl-theme-semantic-ui
