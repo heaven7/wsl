@@ -28,7 +28,8 @@ Clone this repo with
 git clone https://github.com/heaven7/wsl.git && cd wsl/
 ```
 ## Configuration
-Change the settings.example.json corresponding your needs and rename it to `settings.json`.
+Change the `settings.example.json` corresponding your needs and rename it to `settings.json`.
+
 Start the app with
 ```bash
 source start.sh
