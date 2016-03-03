@@ -6,7 +6,7 @@ This app is built with [meteor] (https://www.meteor.com).
 These tools need to be installed before launching wsl.
 
 ### meteor
-Follow these [instruction] (https://www.meteor.com/install) to install meteor.
+Follow these [instructions] (https://www.meteor.com/install) to install meteor.
 
 ### graphicsmagick
 * **Mac OS X** `brew install graphicsmagick` or `brew install imagemagick`
