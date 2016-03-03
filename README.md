@@ -31,7 +31,7 @@ git clone https://github.com/heaven7/wsl.git && cd wsl/
 Change the `settings.example.json` corresponding your needs and rename it to `settings.json`.
 
 ## Start
-Start the app in Linux/MacOs with
+Start the app in Linux/MacOS with
 ```bash
 source start.sh
 ```
