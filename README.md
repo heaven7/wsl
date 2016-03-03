@@ -47,8 +47,7 @@ Enjoy :)
 
 ## Contributing
 Contributors are very welcome. There are many things you can help with,
-including finding and fixing bugs, creating examples for the examples folder,
-contributing to improved design or adding features. Some guidelines below:
+including finding and fixing bugs, improving packages, contributing to improved design or adding features. Some guidelines below:
 
 * **Questions**: Please post to Stack Overflow and tag with `wsl` : http://stackoverflow.com/questions/tagged/wsl.
 
