@@ -1,5 +1,4 @@
 # We Share Love
-===
 a sharing portal for a self-sustaining living.
 
 This app is built with [meteor] (https://www.meteor.com).
@@ -7,18 +6,18 @@ This app is built with [meteor] (https://www.meteor.com).
 These tools need to be installed before launching wsl.
 
 ### meteor
-Follow these (instructions) [https://www.meteor.com/install] to install meteor.
+Follow these [instruction] (https://www.meteor.com/install) to install meteor.
 
 ### graphicsmagick
-**Mac OS X** `brew install graphicsmagick` or `brew install imagemagick`
-**Linux** download rpm or use packagemanager
+* **Mac OS X** `brew install graphicsmagick` or `brew install imagemagick`
+* **Linux** download rpm or use packagemanager
 ```bash
 sudo add-apt-repository ppa:dhor/myway
 sudo apt-get update
 sudo apt-get install graphicsmagick
 ```
-**Centos** `yum install GraphicsMagick`
-**Windows** [download] (https://sourceforge.net/projects/graphicsmagick/files/graphicsmagick/) the installer and run
+* **Centos** `yum install GraphicsMagick`
+* **Windows** [download] (https://sourceforge.net/projects/graphicsmagick/files/graphicsmagick/) the installer and run
 
 ### elasticsearch
 wsl is (going to) built with elasticsearch, so you need to run it before. Look [here] (https://www.elastic.co/guide/en/elasticsearch/guide/current/_installing_elasticsearch.html)  how to.
