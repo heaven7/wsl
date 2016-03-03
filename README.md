@@ -1,5 +1,5 @@
 # We Share Love
-a sharing portal for a self-sustaining living.
+a sharing portal for a self-sustained living.
 
 This app is built with [meteor] (https://www.meteor.com).
 ## Requirements
