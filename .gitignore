@@ -3,3 +3,4 @@ publish_packages.sh
 .idea/*
 settings.json
 start_es.sh
+.gagarin
