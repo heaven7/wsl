@@ -1,0 +1,19 @@
+machine:
+  node:
+    version: 0.10.43
+dependencies:
+  cache_directories:
+    - ~/.meteor
+  override:
+    - meteor || curl https://install.meteor.com | /bin/sh
+    - npm install
+    - npm install -g gagarin
+
+checkout:
+  post:
+    - git submodule update --init --recursive
+    - git submodule foreach git pull --ff-only origin master
+
+test:
+  override:
+    - gagarin -v

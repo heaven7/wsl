@@ -1,7 +1,6 @@
 {
     "helper_name": "_",
     "translation_function_name": "__",
-    "supported_languages": ["en", "de", "es"],
-    "namespace": "project",
-    "preloaded_langs": ["en", "de"]
+    "supported_languages": ["de", "es", "en"],
+    "namespace": null
 }
