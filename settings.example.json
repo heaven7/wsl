@@ -1,4 +1,14 @@
 {
+  "public": {
+    "app_name": "WeShare.Love",
+    "format": {
+      "date": "DD.MM.YYYY",
+      "datetime": "DD.MM.YYYY hh:mm"
+    }
+  },
+  "mail_url": "smtp://email:password@smtp.domain.com:port",
+  "noreply": "no-reply@domain.com",
+
   "elasticsearch": {
     "host": "localhost:9200"
   }

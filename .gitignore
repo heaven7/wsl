@@ -4,3 +4,4 @@ publish_packages.sh
 settings.json
 start_es.sh
 .gagarin
+node_modules
