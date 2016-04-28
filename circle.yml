@@ -9,8 +9,6 @@ dependencies:
     - npm -g install npm@latest
     - npm install
     - npm install -g gagarin
-    - brew install chromedriver
-    - chromedriver
 
 checkout:
   post:
@@ -20,5 +18,7 @@ checkout:
 test:
   pre:
     - sudo apt-get update && sudo apt-get install --only-upgrade google-chrome-stable
+    - chromedriver --port=9515:
+           background: true
   override:
     - gagarin ./**/tests/gagarin/**/*.js -v -t 15000
