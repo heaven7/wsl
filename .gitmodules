@@ -64,3 +64,6 @@
 [submodule "packages/wsl-email"]
 	path = packages/wsl-email
 	url = https://github.com/heaven7/wsl-email.git
+[submodule "packages/date"]
+	path = packages/date
+	url = https://github.com/heaven7/date.git
